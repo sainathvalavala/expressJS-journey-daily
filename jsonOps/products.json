@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Bluetooth Headphones",
+    "category": "Electronics",
+    "price": 2499.99,
+    "brand": "SoundWave",
+    "in_stock": true,
+    "rating": 4.5,
+    "description": "Over-ear wireless headphones with noise cancellation and 20-hour battery life."
+  },
+  {
+    "id": 2,
+    "name": "Smart LED TV 43-inch",
+    "category": "Electronics",
+    "price": 29999.0,
+    "brand": "ViewMax",
+    "in_stock": true,
+    "rating": 4.7,
+    "description": "Full HD Smart LED TV with built-in streaming apps and voice remote."
+  },
+  {
+    "id": 3,
+    "name": "Organic Green Tea - 250g",
+    "category": "Grocery",
+    "price": 499.0,
+    "brand": "NatureLeaf",
+    "in_stock": true,
+    "rating": 4.2,
+    "description": "Premium quality organic green tea leaves for a refreshing and healthy brew."
+  },
+  {
+    "id": 4,
+    "name": "Ergonomic Office Chair",
+    "category": "Furniture",
+    "price": 8499.5,
+    "brand": "WorkEase",
+    "in_stock": false,
+    "rating": 4.6,
+    "description": "Adjustable mesh office chair with lumbar support and 360-degree swivel."
+  },
+  {
+    "id": 5,
+    "name": "Stainless Steel Water Bottle - 1L",
+    "category": "Home & Kitchen",
+    "price": 799.0,
+    "brand": "AquaMate",
+    "in_stock": true,
+    "rating": 4.3,
+    "description": "Insulated water bottle keeps drinks hot for 12 hours or cold for 24 hours."
+  }
+]

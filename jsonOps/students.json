@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Sharma",
+    "age": 20,
+    "gender": "Male",
+    "grade": "A",
+    "major": "Computer Science",
+    "email": "aarav.sharma@example.com",
+    "phone": "+91-9876543210",
+    "city": "Mumbai",
+    "enrollment_year": 2022
+  },
+  {
+    "id": 2,
+    "name": "Priya Patel",
+    "age": 21,
+    "gender": "Female",
+    "grade": "B+",
+    "major": "Business Administration",
+    "email": "priya.patel@example.com",
+    "phone": "+91-9123456789",
+    "city": "Ahmedabad",
+    "enrollment_year": 2021
+  },
+  {
+    "id": 3,
+    "name": "Rohaan Meht",
+    "age": 19,
+    "gender": "Male",
+    "grade": "A-",
+    "major": "Mechanical Engineering",
+    "email": "rohan.mehta@example.com",
+    "phone": "+91-9988776655",
+    "city": "Pune",
+    "enrollment_year": 2023
+  },
+  {
+    "id": 4,
+    "name": "Sneha Nair",
+    "age": 22,
+    "gender": "Female",
+    "grade": "A",
+    "major": "Psychology",
+    "email": "sneha.nair@example.com",
+    "phone": "+91-9090909090",
+    "city": "Bangalore",
+    "enrollment_year": 2020
+  },
+  {
+    "id": 5,
+    "name": "Rahul Verma",
+    "age": 20,
+    "gender": "Male",
+    "grade": "B",
+    "major": "Economics",
+    "email": "rahul.verma@example.com",
+    "phone": "+91-9801234567",
+    "city": "Delhi",
+    "enrollment_year": 2022
+  },
+  {
+    "id": 6,
+    "name": "Isha Singh",
+    "age": 21,
+    "gender": "Female",
+    "grade": "A+",
+    "major": "Biotechnology",
+    "email": "isha.singh@example.com",
+    "phone": "+91-8887776665",
+    "city": "Chandigarh",
+    "enrollment_year": 2021
+  },
+  {
+    "id": 7,
+    "name": "Karan Gupta",
+    "age": 23,
+    "gender": "Male",
+    "grade": "B+",
+    "major": "Civil Engineering",
+    "email": "karan.gupta@example.com",
+    "phone": "+91-9700012345",
+    "city": "Lucknow",
+    "enrollment_year": 2019
+  },
+  {
+    "id": 8,
+    "name": "Meera Reddy",
+    "age": 19,
+    "gender": "Female",
+    "grade": "A-",
+    "major": "English Literature",
+    "email": "meera.reddy@example.com",
+    "phone": "+91-9012345678",
+    "city": "Hyderabad",
+    "enrollment_year": 2023
+  },
+  {
+    "id": 9,
+    "name": "Vikram Das",
+    "age": 22,
+    "gender": "Male",
+    "grade": "B",
+    "major": "Physics",
+    "email": "vikram.das@example.com",
+    "phone": "+91-9898989898",
+    "city": "Kolkata",
+    "enrollment_year": 2020
+  },
+  {
+    "id": 10,
+    "name": "Neha Kapoor",
+    "age": 20,
+    "gender": "Female",
+    "grade": "A",
+    "major": "Mathematics",
+    "email": "neha.kapoor@example.com",
+    "phone": "+91-9776655443",
+    "city": "Jaipur",
+    "enrollment_year": 2022
+  }
+]
