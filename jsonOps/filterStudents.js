@@ -22,6 +22,6 @@ app.get("/a/:n", function (req, res) {
   });
   res.send(pname);
 });
-app.listen(2000, function () {
+app.listen(2, function () {
   console.log("app is running on portno:2000");
 });
