@@ -7,8 +7,8 @@ app.get("/", function (req, res) {
   res.send("server created to filter students from students.json");
 });
 app.get("/b/:n", function (req, res) {
-  var sname = studnets.find((x) => {
-    if (x.name == req.params.n) {
+  var sname = studnets.filter((x) => {
+    if (x.age == req.params.n) {
       return true;
     }
   });
