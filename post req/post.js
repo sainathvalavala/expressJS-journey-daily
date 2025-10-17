@@ -35,6 +35,12 @@ app.get("/apiCall", (req, res) => {
   res.send("api called");
 });
 app.use(express.static(__dirname + "/staticfiles"));
+// fs.readFile("staticFiles/file.txt", function (err, data) {
+//   // let data =[]
+//   let fdata=[];
+//   fdata.push(data);
+//   console.log(data.toString());
+// });
 let arrData = [];
 
 const bodyparser = require("body-parser");
@@ -42,13 +48,13 @@ const bodyparser = require("body-parser");
 app.use(bodyparser.json()); //javascript lo data oste
 app.use(bodyparser.urlencoded({ extended: false })); //form lo unna data ni access cheyatniki.
 app.post("/addData", (req, res) => {
-  console.log(req.query);
-  console.log(req.params);
-  console.log(req.body);
+  // console.log(req.query);
+  // console.log(req.params);
+  // console.log(req.body);
   const bdata = req.body;
   arrData.push(bdata);
-  console.log(bdata);
-  console.log(arrData);
+  // console.log(bdata);
+  // console.log(arrData);
   fs.writeFileSync("staticFiles/file.txt", JSON.stringify(arrData));
   res.send("post request sent");
 });
