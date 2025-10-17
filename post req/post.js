@@ -30,7 +30,7 @@ const cors = require("cors");
 app.get("/", (req, res) => {
   res.send("request /form.html");
 });
-app.use(cors());// Enable CORS for all routes and origins
+app.use(cors()); // Enable CORS for all routes and origins
 app.get("/apiCall", (req, res) => {
   res.send("api called");
 });
@@ -38,15 +38,19 @@ app.use(express.static(__dirname + "/staticfiles"));
 let arrData = [];
 
 const bodyparser = require("body-parser");
-app.use(bodyparser.json())//javascript lo data oste
+//app.use()--middleware
+app.use(bodyparser.json()); //javascript lo data oste
 app.use(bodyparser.urlencoded({ extended: false })); //form lo unna data ni access cheyatniki.
 app.post("/addData", (req, res) => {
-  const bdata = req.body;
-  arrData.push(bdata);
-  console.log(bdata);
-  console.log(arrData);
-  fs.writeFileSync("staticFiles/file.txt", JSON.stringify(arrData));
-  res.send("post request sent");
+  // const bdata = req.body;
+  // arrData.push(bdata);
+  // console.log(bdata);
+  // console.log(arrData);
+  // fs.writeFileSync("staticFiles/file.txt", JSON.stringify(arrData));
+  // res.send("post request sent");
+  console.log(req.query);
+  console.log(req.params);
+  console.log(req.body);
 });
 
 app.listen(2001, () => {
