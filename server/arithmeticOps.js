@@ -6,8 +6,9 @@ app.get("/", function (req, res) {
 });
 
 app.get("/add/:a/:b", function (req, res) {
-  // console.log(req.params);
-  res.send(+req.params.a + +req.params.b);
+  console.log(req.params);
+  //   res.send(+req.params.a + +req.params.b);
+  res.send("ori babaoi")
 });
 app.get("/mul/:a/:b", function (req, res) {
   // console.log(req.params);
@@ -22,6 +23,10 @@ app.get("/sub/:a/:b", function (req, res) {
   res.send(+req.params.a - +req.params.b);
 });
 
+app.post("/add:a/", function (req, res) {
+  console.log(req.params);
+  console.log(req.query);
+});
 app.listen(3000, function () {
   console.log("server running on portNo: 3000");
 });

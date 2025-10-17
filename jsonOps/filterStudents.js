@@ -22,6 +22,21 @@ app.get("/a/:n", function (req, res) {
   });
   res.send(pname);
 });
+
+//post request
+// app.get("/add", function (req, res) {
+//   // console.log("request");
+//   // console.log(req.params);
+//   // console.log(req.query);
+//   res.send("received");
+// });
+// app.post("/add", function (req, res) {
+//   console.log("received");
+//   console.log(req.params);
+//   console.log(req.query);
+//   res.send("received");
+// });
+
 app.listen(2000, function () {
   console.log("app is running on portno:2000");
 });
