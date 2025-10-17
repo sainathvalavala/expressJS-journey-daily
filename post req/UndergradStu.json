@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "age": 20,
+    "major": "Computer Science",
+    "gpa": 3.8
+  },
+  {
+    "id": 2,
+    "name": "Brian Kim",
+    "age": 22,
+    "major": "Mechanical Engineering",
+    "gpa": 3.4
+  },
+  {
+    "id": 3,
+    "name": "Chloe Patel",
+    "age": 19,
+    "major": "Psychology",
+    "gpa": 3.9
+  },
+  {
+    "id": 4,
+    "name": "David Nguyen",
+    "age": 21,
+    "major": "Business Administration",
+    "gpa": 3.6
+  },
+  {
+    "id": 5,
+    "name": "Ella Rodriguez",
+    "age": 23,
+    "major": "Biology",
+    "gpa": 3.7
+  }
+]
