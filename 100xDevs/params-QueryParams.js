@@ -32,9 +32,6 @@ app.get("/mul/:num1/:num2", function (req, res) {
   res.send(`Mul is ${num1 * num2}`);
 });
 
-app.listen(443, () => {
-  "server is running on default portno";
-});
 
 //query params
 /*
@@ -47,7 +44,7 @@ app.get("/sum", function (req, res) {
   //http://localhost:3000/add?a=1&b=2
   const a = parseInt(req.query.a);
   const b = parseInt(req.query.b);
-
+  
   res.json({
     ans: a + b,
   });
@@ -78,4 +75,8 @@ app.get("/sub", function (req, res) {
   res.json({
     ans: a - b,
   });
+});
+
+app.listen(443, () => {
+  "server is running on default portno";
 });
