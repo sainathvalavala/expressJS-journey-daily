@@ -8,7 +8,7 @@ app.get("/", function (req, res) {
 app.get("/add/:a/:b", function (req, res) {
   console.log(req.params);
   //   res.send(+req.params.a + +req.params.b);
-  res.send("ori babaoi")
+  res.send("ori babaoi");
 });
 app.get("/mul/:a/:b", function (req, res) {
   // console.log(req.params);
