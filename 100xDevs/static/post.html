@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="http://localhost:3000/addTodo" method="post">
+      <label for="todo" name="todo">Enter a todo</label>
+      <input type="text" name="todo" />
+      <br />
+      <label for="user" name="user">Enter a user</label>
+      <input type="text" name="user" />
+      <br />
+      <button type="submit">AddTodo</button>
+    </form>
+    <!-- <script>
+      fetch("http://localhost:3000/addTodo", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ task: "test todo" }),
+      })
+        .then((res) => res.text())
+        .then((data) => console.log(data))
+        .catch((err) => console.error("Fetch error:", err));
+    </script> -->
+  </body>
+  
+</html>
