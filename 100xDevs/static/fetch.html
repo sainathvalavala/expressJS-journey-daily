@@ -6,16 +6,35 @@
     <title>Document</title>
   </head>
   <body>
+    <table border="2px solid black">
+      <thead>
+        <tr>
+          <th>TodoName</th>
+          <th>UserName</th>
+        </tr>
+      </thead>
+      <tbody id="tb"></tbody>
+    </table>
+    <a href="http://localhost:3000/post">Add Todo</a>
     <script>
-      fetch("http://localhost:3000/addTodo", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ task: "test todo" }),
-      })
-        .then((res) => res.text())
-        .then((data) => console.log(data))
+      fetch("http://localhost:3000/addTodo")
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          data.forEach(function (x) {
+            var tbody = document.getElementById("tb");
+            var tr1 = document.createElement("tr");
+            tbody.appendChild(tr1);
+            //todoName
+            var todotd = document.createElement("td");
+            todotd.innerHTML = x.todo;
+            tr1.appendChild(todotd);
+            //UserName
+            var usertd = document.createElement("td");
+            usertd.innerHTML = x.user;
+            tr1.appendChild(usertd);
+          });
+        })
         .catch((err) => console.error("Fetch error:", err));
     </script>
   </body>

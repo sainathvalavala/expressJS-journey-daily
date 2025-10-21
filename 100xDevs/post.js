@@ -13,9 +13,18 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.json({ a: "hello" });
 });
+
+app.get("/post", (req, res) => {
+  res.sendFile(__dirname + "/static/post.html");
+});
+
 app.get("/addTodo", function (req, res) {
-  console.log(req.query);
-  res.send("form sent info");
+  var f1 = fs.readFileSync("static/read.txt").toString();
+  res.send(f1);
+
+  // res.send((fs.readFileSync("static/read.txt").toString()));
+  // console.log(req.query);
+  // res.send("form sent info");
 });
 app.post("/addTodo", function (req, res) {
   // res.send("post");
@@ -25,9 +34,10 @@ app.post("/addTodo", function (req, res) {
   // res.status(200).send("Todo received");
   f1.push(req.body);
   fs.writeFileSync("static/read.txt", JSON.stringify(f1));
-  res.send(f1);
-  console.log("got post request");
-  q;
+  // res.send(f1);
+  // res.send("Form submitted");
+  res.sendFile(__dirname+ "/static/fetch.html")
+  console.log("form submitted");
 });
 
 app.listen(3000, () => console.log("server is running"));
