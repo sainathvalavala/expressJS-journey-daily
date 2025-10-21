@@ -3,19 +3,19 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const fs = require("fs");
+app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(cors());
 app.use(express.static(__dirname + "/static"));
 const todoRouter = require("./routes/todos.routes");
+
 app.use("/todos", todoRouter);
+
+app.listen(3000, () => console.log("server is running"));
+
 // const bodyparser = require("body-parser");
 // app.use(bodyparser.json());
 // app.use(bodyparser.urlencoded({ extended: false }));
-app.get("/", (req, res) => {
-  res.json({ a: "hello" });
-});
-
 // app.get("/post", (req, res) => {
 //   res.sendFile(__dirname + "/static/post.html");
 // });
@@ -41,5 +41,3 @@ app.get("/", (req, res) => {
 //   res.sendFile(__dirname+ "/static/fetch.html")
 //   console.log("form submitted");
 // });
-
-app.listen(3000, () => console.log("server is running"));
