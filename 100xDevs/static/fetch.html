@@ -15,9 +15,9 @@
       </thead>
       <tbody id="tb"></tbody>
     </table>
-    <a href="http://localhost:3000/post">Add Todo</a>
+    <a href="http://localhost:3000/post.html">Add Todo</a>
     <script>
-      fetch("http://localhost:3000/addTodo")
+      fetch("http://localhost:3000/todos/addTodo")
         .then((res) => res.json())
         .then((data) => {
           console.log(data);
