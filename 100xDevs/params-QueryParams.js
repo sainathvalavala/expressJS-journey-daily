@@ -50,7 +50,7 @@ app.get("/sum", function (req, res) {
   });
 });
 
-//  http://localhost:3000/multiply?a=1&b=2
+//  http://localhost:3000/mul?a=1&b=2
 app.get("/mul", function (req, res) {
   const a = parseInt(req.query.a);
   const b = parseInt(req.query.b);
@@ -59,7 +59,7 @@ app.get("/mul", function (req, res) {
   });
 });
 
-// http://localhost:3000/divide?a=1&b=2
+// http://localhost:3000/div?a=1&b=2
 app.get("/div", function (req, res) {
   const a = parseInt(req.query.a);
   const b = parseInt(req.query.b);
@@ -68,7 +68,7 @@ app.get("/div", function (req, res) {
   });
 });
 
-// .http://localhost:3000/subtract?a=1&b=2
+// .http://localhost:3000/sub?a=1&b=2
 app.get("/sub", function (req, res) {
   const a = parseInt(req.query.a);
   const b = parseInt(req.query.b);
