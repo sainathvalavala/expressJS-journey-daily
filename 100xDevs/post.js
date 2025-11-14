@@ -3,13 +3,21 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const fs = require("fs");
+const middlewares = require("./middlewares/middlewares");jjjjjj
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static(__dirname + "/static"));
 const todoRouter = require("./routes/todos.routes");
 
-app.use("/todos", todoRouter);
+app.use(
+  "/todos",
+  function (req, res, next) {
+    console.log("todos middleware");
+    next();
+  },
+  todoRouter
+);
 
 app.listen(3000, () => console.log("server is running"));
 
